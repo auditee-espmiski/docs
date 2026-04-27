@@ -43,9 +43,36 @@
               "essentials/navigation",
               "essentials/navigation-copied-1",
               "essentials/navigation-copied-2",
-              "essentials/navigation-copied-3",
-              "essentials/navigation-copied-4",
-              "essentials/navigation-copied-5",
+              {
+                "group": "Lihat Data Pendidikan",
+                "icon": "angle-right",
+                "pages": [
+                  "data-pendidikan/ipk",
+                  "data-pendidikan/drop-out",
+                  "data-pendidikan/lulus-tepat-waktu",
+                  "data-pendidikan/tugas-akhir"
+                ]
+              },
+              {
+                "group": "Lihat Data Penelitian",
+                "icon": "angle-right",
+                "pages": [
+                  "data-penelitian/penelitian",
+                  "data-penelitian/karya-ilmiah",
+                  "data-penelitian/haki",
+                  "data-penelitian/publikasi-jurnal"
+                ]
+              },
+              {
+                "group": "Lihat Data Pengabdian",
+                "icon": "angle-right",
+                "pages": [
+                  "data-pengabdian/kegiatan-pkm",
+                  "data-pengabdian/publikasi-pkm",
+                  "data-pengabdian/bahan-ajar-pkm",
+                  "data-pengabdian/mutu-pelaksanaan"
+                ]
+              }
               "essentials/navigation-copied-6",
               "essentials/navigation-copied-7"
             ]
