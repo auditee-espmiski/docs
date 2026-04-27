@@ -28,15 +28,16 @@
         "tab": "Guides",
         "groups": [
           {
-            "group": "Getting starteds",
+            "group": "Pengenalan",
             "pages": [
               "index",
               "quickstart",
-              "development"
+              "development",
+              "development-copied-1"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Menu Auditee",
             "pages": [
               "essentials/settings",
               "essentials/navigation"
