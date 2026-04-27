@@ -1,85 +1,28 @@
 ---
-description: "The navigation field in docs.json defines the pages that go in the navigation menu"
 icon: "map"
 title: "Daftar Temuan"
 ---
 
-The navigation menu is the list of links on every website.
+Menu **Daftar Temuan** digunakan oleh **Auditee** untuk melihat daftar **temuan hasil Audit Mutu Internal (AMI)** yang diberikan oleh **Auditor**. Temuan yang ditampilkan menunjukkan adanya **ketidaksesuaian** atau hal yang perlu diperbaiki pada standar mutu.
 
-You will likely update `docs.json` every time you add a new page. Pages do not show up automatically.
+Jenis temuan dapat berupa **Ketidaksesuaian (KTS) Minor**, **KTS Mayor**, maupun **Observasi (OB)**. Informasi pada menu ini menjadi acuan bagi Auditee dalam melakukan **tindak lanjut (RTL)**.
 
-## Navigation syntax
+## Cara Mengakses Menu Daftar Temuan
 
-Our navigation syntax is recursive which means you can make nested navigation groups. You don't need to include `.mdx` in page names.
+<Steps>
+  <Step title="Login ke aplikasi eSPMI menggunakan akun Anda.">
+    Pastikan username dan password yang digunakan sudah sesuai agar dapat mengakses fitur yang tersedia.
+  </Step>
+  <Step title="Pilih menu Daftar Temuan pada halaman utama.">
+    Halaman **Daftar Temuan** menampilkan data standar mutu yang memiliki temuan berdasarkan hasil audit. Setiap data biasanya dilengkapi dengan:
 
-<CodeGroup>
+    - Jenis temuan (KTS Minor / KTS Mayor / Observasi)
+    - Keterangan atau catatan dari auditor
+    - Status tindak lanjut (Open / Close)
 
-```json Regular Navigation
-"navigation": {
-  "tabs": [
-    {
-      "tab": "Docs",
-      "groups": [
-        {
-          "group": "Getting Started",
-          "pages": ["quickstart"]
-        }
-      ]
-    }
-  ]
-}
-```
-
-```json Nested Navigation
-"navigation": {
-  "tabs": [
-    {
-      "tab": "Docs",
-      "groups": [
-        {
-          "group": "Getting Started",
-          "pages": [
-            "quickstart",
-            {
-              "group": "Nested Reference Pages",
-              "pages": ["nested-reference-page"]
-            }
-          ]
-        }
-      ]
-    }
-  ]
-}
-```
-
-</CodeGroup>
-
-## Folders
-
-Simply put your MDX files in folders and update the paths in `docs.json`.
-
-For example, to have a page at `https://yoursite.com/your-folder/your-page` you would make a folder called `your-folder` containing an MDX file called `your-page.mdx`.
-
-<Warning>
-  You cannot use `api` for the name of a folder unless you nest it inside another folder. Mintlify uses Next.js which reserves the top-level `api` folder for internal server calls. A folder name such as `api-reference` would be accepted.
-</Warning>
-
-```json Navigation With Folder
-"navigation": {
-  "tabs": [
-    {
-      "tab": "Docs",
-      "groups": [
-        {
-          "group": "Group Name",
-          "pages": ["your-folder/your-page"]
-        }
-      ]
-    }
-  ]
-}
-```
-
-## Hidden pages
-
-MDX files not included in `docs.json` will not show up in the sidebar but are accessible through the search bar and by linking directly to them.
+    Melalui halaman ini, Auditee dapat mengetahui temuan yang perlu segera ditindaklanjuti.
+  </Step>
+  <Step title="Tekan tombol Rencana Tindak Lanjut">
+    Anda dapat mengisikan form RTL untuk mendatakan tindak lanjut yang unit Anda lakukan.
+  </Step>
+</Steps>
