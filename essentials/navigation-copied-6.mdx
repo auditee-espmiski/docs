@@ -1,85 +1,32 @@
 ---
-description: "The navigation field in docs.json defines the pages that go in the navigation menu"
 icon: "map"
 title: "Manajemen Dokumen"
 ---
 
-The navigation menu is the list of links on every website.
+Menu **Manajemen Dokumen** digunakan oleh **Auditee** untuk mengelola **dokumen pendukung** yang digunakan dalam proses **Evaluasi Diri** dan **Audit Mutu Internal (AMI)** pada aplikasi **eSPMI**.
 
-You will likely update `docs.json` every time you add a new page. Pages do not show up automatically.
+Melalui menu ini, Auditee dapat mengunggah, melihat, dan mengelola dokumen yang menjadi **bukti sahih** atas capaian standar mutu.
 
-## Navigation syntax
+### Cara Mengunggah Dokumen
 
-Our navigation syntax is recursive which means you can make nested navigation groups. You don't need to include `.mdx` in page names.
+<AccordionGroup>
+  <Accordion title="Login ke aplikasi eSPMI menggunakan akun Anda.">
+    Pastikan username dan password yang digunakan sudah sesuai agar dapat mengakses fitur yang tersedia.
+  </Accordion>
 
-<CodeGroup>
+  <Accordion title="Pilih menu Manajemen Dokumen">
+    Dokumen yang diunggah pada menu ini dapat digunakan sebagai **lampiran pada Evaluasi Diri** maupun sebagai **bukti pendukung saat proses audit** oleh Auditor.
+  </Accordion>
 
-```json Regular Navigation
-"navigation": {
-  "tabs": [
-    {
-      "tab": "Docs",
-      "groups": [
-        {
-          "group": "Getting Started",
-          "pages": ["quickstart"]
-        }
-      ]
-    }
-  ]
-}
-```
+  <Accordion title="Klik tombol Tambah">
+    Akan tampil form Tambah Dokumen, Anda bisa melakukan pengisian pada field yang tersedia dengan:
 
-```json Nested Navigation
-"navigation": {
-  "tabs": [
-    {
-      "tab": "Docs",
-      "groups": [
-        {
-          "group": "Getting Started",
-          "pages": [
-            "quickstart",
-            {
-              "group": "Nested Reference Pages",
-              "pages": ["nested-reference-page"]
-            }
-          ]
-        }
-      ]
-    }
-  ]
-}
-```
+    - Pilih **Kategori Dokumen**.
+    - Pilih **Jenis Dokumen**.
+    - Pilih file dokumen yang akan diunggah.
+  </Accordion>
 
-</CodeGroup>
-
-## Folders
-
-Simply put your MDX files in folders and update the paths in `docs.json`.
-
-For example, to have a page at `https://yoursite.com/your-folder/your-page` you would make a folder called `your-folder` containing an MDX file called `your-page.mdx`.
-
-<Warning>
-  You cannot use `api` for the name of a folder unless you nest it inside another folder. Mintlify uses Next.js which reserves the top-level `api` folder for internal server calls. A folder name such as `api-reference` would be accepted.
-</Warning>
-
-```json Navigation With Folder
-"navigation": {
-  "tabs": [
-    {
-      "tab": "Docs",
-      "groups": [
-        {
-          "group": "Group Name",
-          "pages": ["your-folder/your-page"]
-        }
-      ]
-    }
-  ]
-}
-```
-
-## Hidden pages
-
-MDX files not included in `docs.json` will not show up in the sidebar but are accessible through the search bar and by linking directly to them.
+  <Accordion title="Tekan tombol Simpan">
+    Pastikan yang Anda isikan telah sesuai dan ketika Anda klik simpan, dokumen yang Anda upload dapat digunakan sebagai bukti sahih dalam spmi.
+  </Accordion>
+</AccordionGroup>
