@@ -29,6 +29,7 @@
         "groups": [
           {
             "group": "Pengenalan",
+            "icon": "circle-info",
             "pages": [
               "index",
               "cara-mengakses-aplikasi",
@@ -38,6 +39,7 @@
           },
           {
             "group": "Menu Auditee",
+            "icon": "blinds-open",
             "pages": [
               "essentials/evaluasi-diri",
               "essentials/daftar-kesesuaian",
