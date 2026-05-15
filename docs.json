@@ -1,25 +1,25 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "eSpmi Auditee Documentation",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#f63a4c",
+    "light": "#f63a4c",
+    "dark": "#f63a4c"
   },
   "favicon": "/favicon.svg",
   "navigation": {
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
+          "anchor": "ecampuz.com",
           "icon": "book-open-cover",
-          "href": "https://mintlify.com/docs"
+          "href": "https://ecampuz.com"
         },
         {
           "anchor": "Blog",
           "icon": "newspaper",
-          "href": "https://mintlify.com/blog"
+          "href": "https://blog.ecampuz.com"
         }
       ]
     },
@@ -31,50 +31,50 @@
             "group": "Pengenalan",
             "pages": [
               "index",
-              "quickstart",
-              "development",
-              "development-copied-1"
+              "cara-mengakses-aplikasi",
+              "cara-keluar-aplikasi",
+              "cara-ubah-password"
             ]
           },
           {
             "group": "Menu Auditee",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/navigation-copied-1",
-              "essentials/navigation-copied-2",
+              "essentials/evaluasi-diri",
+              "essentials/daftar-kesesuaian",
+              "essentials/daftar-temuan",
+              "essentials/hasil-desk-evaluation",
               {
                 "group": "Lihat Data Pendidikan",
                 "icon": "angle-right",
                 "pages": [
-                  "data-pendidikan/ipk",
-                  "data-pendidikan/drop-out",
-                  "data-pendidikan/lulus-tepat-waktu",
-                  "data-pendidikan/tugas-akhir"
+                  "data-pendidikan/data-ipk",
+                  "data-pendidikan/data-do",
+                  "data-pendidikan/data-lulus-tepat-waktu",
+                  "data-pendidikan/data-tugas-akhir"
                 ]
               },
               {
                 "group": "Lihat Data Penelitian",
                 "icon": "angle-right",
                 "pages": [
-                  "data-penelitian/penelitian",
-                  "data-penelitian/karya-ilmiah",
-                  "data-penelitian/haki",
-                  "data-penelitian/publikasi-jurnal"
+                  "data-penelitian/data-penelitian",
+                  "data-penelitian/data-karya-ilmiah",
+                  "data-penelitian/data-haki",
+                  "data-penelitian/data-publikasi-jurnal"
                 ]
               },
               {
                 "group": "Lihat Data Pengabdian",
                 "icon": "angle-right",
                 "pages": [
-                  "data-pengabdian/kegiatan-pkm",
-                  "data-pengabdian/publikasi-pkm",
-                  "data-pengabdian/bahan-ajar-pkm",
-                  "data-pengabdian/mutu-pelaksanaan"
+                  "data-pengabdian/data-kegiatan-pkm",
+                  "data-pengabdian/data-publikasi-pkm",
+                  "data-pengabdian/data-bahan-ajar-pkm",
+                  "data-pengabdian/data-mutu-pelaksanaan"
                 ]
               },
-              "essentials/navigation-copied-6",
-              "essentials/navigation-copied-7"
+              "essentials/manajemen-dokumen",
+              "essentials/laporan-ami"
             ]
           }
         ]
@@ -120,21 +120,20 @@
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "instagram": "https://www.instagram.com/ecampuzofficial/",
+      "linkedin": "https://id.linkedin.com/company/ecampuzofficial"
     }
   }
 }
